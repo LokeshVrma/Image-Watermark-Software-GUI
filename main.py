@@ -26,7 +26,7 @@ class App(Tk):
         self.save_button.place(x=300, y=250)
 
     def browse_files(self):
-        self.filename = filedialog.askopenfilename(initialdir="D:/test", title="Select an Image", filetypes=(("Image files", "*.jpg"),("All files", ".*")))
+        self.filename = filedialog.askopenfilename(initialdir="/", title="Select an Image", filetypes=(("Image files", "*.jpg"),("All files", ".*")))
 
         if self.filename:
             try:
